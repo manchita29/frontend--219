@@ -1,0 +1,7 @@
+<!-- create a input field and a  button that input field is for file uploading the file should not br more than 4mb if the file is more than it will gernate the error mgs inside the  -->
+
+<!-- for slider : imahe should be in up and dowm direction -->
+
+<!--  by divide by zeroinfinite expestion -->
+<!-- create  two variable first value is 100 and second is 100 throw a exception that it canot be divides by 0 -->
+<!-- create a finction inside script inishlize variable a and b with some value and use expextion handling method in whitch you are trying to display the value of c var with is neither declare nor defined -->

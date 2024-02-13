@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           border: 2px solid black; 
+           border-width: 20%;
+           border-right: 30%;
+           border-left: 30%;
+           margin-right: 30%;
+           font-size: larger;
+           background-image: url("https://images.unsplash.com/photo-1578997864329-d747473f7359?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyayUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D");
+           background-size: cover;
+            height: inherit;
+            background-position: 0%;
+
+           margin-left: 20%;
+           margin-top: 10%;
+           text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>user information</h1>
+        <form action="#" onsubmit="return check() " autocomplete="off">
+            <table style="width: 100%" align ="center" >
+                <tr><td><input type="text" id="name" placeholder="enter your name"  ><span id="name1"></span></td></tr>
+                <tr><td><input type="password" id="pass" placeholder="enter password"><span id="pass1"></span></td></tr>
+                <tr><td><input type="password" id="cpass" placeholder="enter your confirm password"><span id="pass2"></span></td></tr>
+                <tr><td><input type="text" id="mobile" placeholder="enter your mobile"><span id="mob1"></span></td></tr>
+                <tr><td><input type="email" id="email" placeholder="enter your email"><span id="email1"></span></td></tr>
+                <tr><td><input type="submit" placeholder="submit"><span id="sub1"></span></td></tr>
+            </table>
+        </form>
+        <script>
+           
+            function check(){
+            var a=document.getElementById('name').value
+            var b=document.getElementById('pass').value
+            var c=document.getElementById('cpass').value
+            var d=document.getElementById('mobile').value
+                if (a===" "){
+                    document.getElementById('name1').innerHTML="it should not be null"
+                    return false;
+                }
+                else if(a.length<4){
+                    document.getElementById('name').innerHTML="not here"
+                }
+                if (b===""||b!=null){
+                    document.getElementById('pass1').innerHTML="it should not be null";
+                    return false;
+
+                }
+            }
+              
+        </script>
+    </fieldset>
+</body>
+</html>

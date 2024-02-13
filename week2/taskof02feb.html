@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            display: inline;
+            width: 30%;
+            height: 30%;
+        }
+    </style>
+</head>
+<body>
+     <!-- task 1 -->
+     <h1  ondblclick="event1()">profile</h1>
+    <img src="https://wallpapers.com/images/featured/anime-girl-aesthetic-background-155kg0i1m5baniu7.jpg" alt="opps" onmousemove="move()" onmouseout="leave()">
+   
+     <p id="bio"></p>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230920155306/Isaac-Newton.jpg" alt="ok" id="hi" ondblclick="event2()" >
+
+<!-- task2  when Apply task for Keyboard events.Apply the prop.of changing background colour of every input type .
+    // Ex: when u write red in on key up the bg colur of the input change to red and when u apply green colour in ion key pressthe bg colour change to green
+    // Hint: use docu.get element with id along with style with bg prop. to change the colour of field.-->
+    <p>key board</p>
+    <input type="text" id="demo" onkeydown="keydown()" onkeyup="keyup()">
+    <script>
+        
+        
+
+        function move(){
+        let a="hi my name is bla bla";
+        document.getElementById("bio").innerHTML = a;
+        }
+        function leave(){
+            document.getElementById("bio").innerHTML = "";
+
+        }
+        function event1(){
+            let b= "/table";
+            alert("hi")
+        } 
+        function event2(){
+            
+            document.getElementById(hi).innerHTML="hellow"
+        }
+    
+        function keydown(){
+            this.style.backgroundColor =color;
+            // document.getElementById("demo").style.backgroundColor="pink";
+        }
+        function keyup(){
+            // document.getElementById("demo").style.backgroundColor="yellow";
+            this.style.backgroundColor =color;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+           border: 2px solid black; 
+           border-width: 20%;
+           border-right: 30%;
+           border-left: 30%;
+           margin-right: 30%;
+           font-size: larger;
+           background-image: url("https://images.unsplash.com/photo-1578997864329-d747473f7359?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyayUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D");
+           background-size: cover;
+            height: inherit;
+            background-position: 0%;
+
+           margin-left: 20%;
+           margin-top: 10%;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>user information</h1>
+        <form action="#" onsubmit="return check()" autocomplete="off">
+            <table style="width: 100%" align ="center" >
+                <tr><td><input type="text" id="name" placeholder="Enter your name"  ><span id="name1"></span></td></tr>
+                <tr><td><input type="password" id="pass" placeholder="Enter password"><span id="pass1"></span></td></tr>
+                <tr><td><input type="password" id="cpass" placeholder="Enter your confirm password"><span id="pass2"></span></td></tr>
+                <tr><td><input type="text" id="mobile" placeholder="Enter your mobile"><span id="mob1"></span></td></tr>
+                <tr><td><input type="email" id="email" placeholder="Enter your email"><span id="email1"></span></td></tr>
+                <tr><td><input type="submit" value="Submit"><span id="sub1"></span></td></tr>
+            </table>
+        </form>
+        <script>
+            function check() {
+                var a = document.getElementById('name').value.trim();
+                var b = document.getElementById('pass').value.trim();
+                var c = document.getElementById('cpass').value.trim();
+                var d = document.getElementById('mobile').value.trim();
+                var e = document.getElementById('email').value.trim();
+
+                // // Reset error messages
+                // document.getElementById('name1').innerHTML = "";
+                // document.getElementById('pass1').innerHTML = "";
+                // document.getElementById('pass2').innerHTML = "";
+                // document.getElementById('mob1').innerHTML = "";
+                // document.getElementById('email1').innerHTML = "";
+
+                // Check if fields are empty
+                if (a === "" ) {
+                    document.getElementById('name1').innerHTML = "Name should not be null";
+                    return false;
+                }
+              
+
+
+                if (b === "") {
+                    document.getElementById('pass1').innerHTML = "Password should not be empty";
+                    return false;
+                }
+                if (c === "") {
+                    document.getElementById('pass2').innerHTML = "Confirm Password should not be empty";
+                    return false;
+                }
+                if (d === "") {
+                    document.getElementById('mob1').innerHTML = "Mobile number should not be empty";
+                    return false;
+                }
+                if (e === "") {
+                    document.getElementById('email1').innerHTML = "Email should not be empty";
+                    return false;
+                }
+                
+                // You can add additional validation checks here
+                
+                return true; // Form will be submitted if all validation checks pass
+            }
+        </script>
+    </fieldset>
+</body>
+</html>
