@@ -1,0 +1,52 @@
+<!-- create two button first n=button name is start and second button name is stop when you press first it will display the current time and when second is click it stop the timing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Display</title>
+    <script>
+        var interval; // Variable to store the interval ID
+
+        // Function to start displaying current time
+        function startTime() {
+            interval = setInterval(displayTime, 1000); // Update time every second
+        }
+
+        // Function to stop displaying current time
+        function stopTime() {
+            clearInterval(interval); // Stop the interval
+        }
+
+        // Function to display current time
+        function displayTime() {
+            var now = new Date(); // Get current date and time
+            var timeString = now.toLocaleTimeString(); // Convert time to string format
+            document.getElementById('timeDisplay').innerHTML = timeString; // Display time
+        }
+    </script>
+</head>
+<body>
+    <h1>Time Display</h1>
+    <p id="timeDisplay">Click "Start" to display the current time.</p>
+    <!-- Button to start displaying time -->
+    <button onclick="startTime()">Start</button>
+    <!-- Button to stop displaying time -->
+    <button onclick="stopTime()">Stop</button>
+</body>
+</html>
+
+</body>
+</html>
+
+<!-- create a time function in which you have to stop the timing after 4 secong and after four second an alert will be display your name -->

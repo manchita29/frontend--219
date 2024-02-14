@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="hi">hello how are you</h1> 
+   <script>
+    var a=document.querySelector("#hi");
+    a.innerHTML=("i am fine ,thanku you")
+    a.addEventListener('click' ,function(){
+        a.innerHTML="whata gonig on";
+        a.style.backgroundColor="yellow"
+    })
+   </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #circle{
+        border:solid black;
+        width: 200px;
+        height: 200px;
+        background-color: burlywood;
+        border-radius: 50%;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="circle"></div> <br><br>
+    <button id="butt">change color</button>
+    <script>
+        var a=document.querySelector("#circle")
+        var b=document.querySelector("#butt")
+        bool=0;
+        b.addEventListener('click',function(){
+      
+        if(bool==0){
+            a.style.backgroundColor="blue"
+            bool=1;
+        }
+        else{
+            a.style.backgroundColor="Transparent"
+            bool=0;
+        }})
+    </script>
+    
+</body>
+</html>

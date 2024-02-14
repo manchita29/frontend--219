@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Function</title>
+    <script>
+        // Function to display alert after 4 seconds
+        function displayAlert() {
+            // Set timeout to display alert after 4 seconds
+            setTimeout(function() {
+                var name = prompt("Please enter your name:");
+                alert("Hello, " + name + "!");
+            }, 4000); // 4000 milliseconds = 4 seconds
+        }
+    </script>
+</head>
+<body>
+    <h1>Timer Function</h1>
+    <p>Wait for 4 seconds to see the alert.</p>
+    <!-- Button to start the timer -->
+    <button onclick="displayAlert()">Start Timer</button>
+</body>
+</html>
