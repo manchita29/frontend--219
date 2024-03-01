@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<!-- <style>
+   .border{
+    margin-left: 30%;
+
+   }
+</style> -->
+
+<body>
+    <table class="border">
+        <tr id="yel">
+            <th colspan="3">datesheet</th>
+        </tr>
+        <tr>
+            <th>subject</th>
+            <th>timing</th>
+            <th>roomno</th>
+        </tr>
+        <tr>
+            <td>os</td>
+            <td>9:30-10:30</td>
+            <td>38-203</td>
+        </tr>
+        <tr>
+            <td>daa</td>
+            <td id="daa">11:30-12:30</td>
+            <td>25-503</td>
+        </tr>
+        <tr>
+            <td>gen-ai</td>
+            <td >1:30-2:30</td>
+            <td id="gen">34-103</td>
+        </tr>
+        <script>
+           $(document).ready(function(){
+            $("#yel").css("backgroundColor","yellow");
+            $("#daa").css("backgroundColor","red");
+            $("#gen").css("backgroundColor","pink");
+            $(".border").css("border","2px solid black");
+            $(".border").css("text-align","center");
+            $(".border").css("font-size","large");
+            $(".border").css("margin-left","40%");
+        
+            
+
+        });
+
+        </script>
+    </table>
+</body>
+</html>

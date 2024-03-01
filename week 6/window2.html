@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p id="p1">sincerity</p>
+    <p id="p2">you <strong>can be placed if you worked hard</strong></p>
+    
+    <p><input type="text" value="learning" id="p3"></p>
+    <button id="btn1">showtext</button>
+    <button id="btn2">showHTML</button>
+    <button id="btn3">showValue</button>
+    
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert($("#p1").text());
+
+            });
+            $("#btn2").click(function(){
+                alert($("#p2").html());
+
+            });
+            $("#btn3").click(function(){
+                alert($("#p3").val());
+
+            });
+
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+// starting of jquery
+// $(dodument).ready(function(){.......
+// })it compile independent and inc coding speed;
+
+
+-----selector------
+$("*")//. for classs
+$("ul li")
+$(".abc,.xyz")// multiple clases
+$("p:first")
+$("p:last")
+$("li:even")
+
+create a table in which datesheet of your midterm will be displayed yo have to apply yellow coclor in datesheet and border of table timing od daa is orange and room no blue;
+demonstrate the usage of 15 selectors apply css backgroung colow,color,border on the 15 selector 
+ADD ONE IMAGE when you enter inside on image the image then image will be hidden (.hide)

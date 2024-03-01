@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 100px;
+        width: 400px;
+        overflow: auto;
+        border: solid black;
+
+    }
+</style>
+<script src="jquery-3.7.1.min.js"></script>
+<body>
+    <h2>window event</h2>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, accusamus facere voluptatibus impedit dignissimos temporibus illum explicabo sunt, molestiae sed vitae quibusdam, laborum deleniti delectus modi in. Saepe ad adipisci laudantium ipsam et odit nam? Autem optio labore fugiat natus.
+    </div>
+    <script>
+         $(document).ready(function(){
+            $("#box").scroll(function(){
+                
+            for(let i=0;i<=100;i++){
+                console.log("you are sweet...");
+            }
+        });
+            $(window).resize(function(){
+                console.log("you are resizing......");
+            });
+         });
+    </script>
+</body>
+</html>

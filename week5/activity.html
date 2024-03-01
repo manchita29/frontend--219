@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image, Table, and Factorial</title>
+    <style>
+        #image, #table {
+            display: none; /* Initially hide the image and table */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton">Toggle Image, Table, and Factorial</button>
+    <br>
+    <img id="image" src="https://via.placeholder.com/150" alt="Sample Image">
+    <table id="table" border="1">
+        <tr>
+            <th>Table of 4</th>
+        </tr>
+    </table>
+    <p id="factorial" style="display: none; margin-top: 20px;"></p>
+
+    <script>
+        // Get references to the image, table, and factorial elements
+        var image = document.getElementById("image");
+        var table = document.getElementById("table");
+        var factorial = document.getElementById("factorial");
+
+        // Get reference to the button
+        var toggleButton = document.getElementById("toggleButton");
+
+        // Add event listener to the button
+        toggleButton.addEventListener("click", function() {
+            // If the image is currently hidden, show it and hide the table and factorial
+            if (image.style.display === "none") {
+                image.style.display = "block";
+                table.style.display = "none";
+                factorial.style.display = "none";
+            }
+            // If the table is currently hidden, show it and hide the image and factorial
+            else if (table.style.display === "none") {
+                image.style.display = "none";
+                table.style.display = "block";
+                factorial.style.display = "none";
+
+                // Generate the table of 4
+                var tableHTML = "<tr><th>Table of 4</th></tr>";
+                for (var i = 1; i <= 10; i++) {
+                    tableHTML += "<tr><td>" + i + " * 4 = " + (i * 4) + "</td></tr>";
+                }
+                table.innerHTML = tableHTML;
+            }
+            // If the factorial is currently hidden, show it and hide the image and table
+            else {
+                image.style.display = "none";
+                table.style.display = "none";
+                factorial.style.display = "block";
+                // Calculate and display the factorial of 5
+                var fact = 1;
+                for (var i = 1; i <= 5; i++) {
+                    fact *= i;
+                }
+                factorial.innerHTML = "Factorial of 5: " + fact;
+            }
+        });
+    </script>
+</body>
+</html>

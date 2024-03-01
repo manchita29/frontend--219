@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="butt">click</button>
+    <button onclick="stop1()">stop</button>
+    <div id="one"></div>
+   
+    <script>
+        var counter=0;
+        var a=document.getElementById("butt").addEventListener("click",counter1);
+        var b=document.getElementById("butt").addEventListener("mouseover",colorchange);
+        var c=document.getElementById("butt").addEventListener("mouseout",colorchange1);
+       
+        
+        function counter1(){
+            document.getElementById("one").innerText=counter;
+            counter++;
+        }
+        function colorchange(){
+            document.getElementById("one").style.background="blue";
+        }
+        function colorchange1(){
+            document.getElementById("one").style.background="black";
+        }
+        function stop1(){
+            document.getElementById("butt").removeEventListener("click",counter1);
+
+            }
+
+
+
+    </script>
+</body>
+</html>

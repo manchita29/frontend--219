@@ -37,25 +37,29 @@
             </table>
         </form>
         <script>
+    
             function check() {
-                var a = document.getElementById('name').value.trim();
-                var b = document.getElementById('pass').value.trim();
-                var c = document.getElementById('cpass').value.trim();
-                var d = document.getElementById('mobile').value.trim();
-                var e = document.getElementById('email').value.trim();
+                var a = document.getElementById('name').value
+                var b = document.getElementById('pass').value
+                var c = document.getElementById('cpass').value
+                var d = document.getElementById('mobile').value
+                var e = document.getElementById('email').value
 
-                // // Reset error messages
-                // document.getElementById('name1').innerHTML = "";
-                // document.getElementById('pass1').innerHTML = "";
-                // document.getElementById('pass2').innerHTML = "";
-                // document.getElementById('mob1').innerHTML = "";
-                // document.getElementById('email1').innerHTML = "";
+                // Reset error messages
+                document.getElementById('name1').innerHTML = "";
+                document.getElementById('pass1').innerHTML = "";
+                document.getElementById('pass2').innerHTML = "";
+                document.getElementById('mob1').innerHTML = "";
+                document.getElementById('email1').innerHTML = "";
 
                 // Check if fields are empty
-                if (a === "" ) {
-                    document.getElementById('name1').innerHTML = "Name should not be null";
-                    return false;
-                }
+                if (a === "") {
+            document.getElementById('name1').innerHTML = "Name should not be empty";
+            return false;
+        } else if (a.length < 3) {
+            document.getElementById('name1').innerHTML = "Name should be at least 3 characters long";
+            return false;
+        }
               
 
 
@@ -64,14 +68,18 @@
                     return false;
                 }
                 if (c === "") {
-                    document.getElementById('pass2').innerHTML = "Confirm Password should not be empty";
-                    return false;
-                }
-                if (d === "") {
+            document.getElementById('pass2').innerHTML = "Confirm Password should not be empty";
+            return false;
+        } else if (c !== b) {
+            document.getElementById('pass2').innerHTML = "Passwords do not match";
+            return false;
+        }
+                
+        if (d === "") {
                     document.getElementById('mob1').innerHTML = "Mobile number should not be empty";
                     return false;
                 }
-                if (e === "") {
+        if (e === "") {
                     document.getElementById('email1').innerHTML = "Email should not be empty";
                     return false;
                 }

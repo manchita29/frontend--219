@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main ,#tn,img{
+            box-shadow: 2px 2px 2px yellow;
+            border-radius: 10px;
+        }
+        #tn img{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        #tn{
+            text-align: center;
+
+        }
+        #main {
+            width: 700px;
+            height: 500px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <img id="main" src="https://staticg.sportskeeda.com/editor/2023/06/b7ab6-16871410188470-1920.jpg" alt="">
+    <div id="tn">
+        <img src="https://staticg.sportskeeda.com/editor/2023/06/b7ab6-16871410188470-1920.jpg" alt="">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" alt="">
+        <img src="https://w7.pngwing.com/pngs/227/909/png-transparent-pokemon-charmander-pokemon-go-pikachu-ash-ketchum-charmander-pokemon-orange-fictional-character-cartoon-thumbnail.png" alt="">
+        <img src="https://www.hindustantimes.com/ht-img/img/2023/05/01/550x309/Pokemon-Go-how-to-get-shiny-pokemon_1682965009251_1682965015670.jpg" alt="">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2022/02/The-Seas-Legend-Pokemon-Arceus-4b855b3.jpg?quality=90&fit=620,413" alt="">
+        <img src="https://static.vecteezy.com/system/resources/previews/025/934/636/large_2x/cute-pokemon-background-icon-generated-by-ai-photo.jpg" alt="">
+        <script>
+            var a=document.getElementById("tn");
+            var b=a.getElementsByTagName("img");
+            var c=document.getElementById("main");
+            for(let i=0;i<b.length;i++){
+                let d=b[i];
+                d.addEventListener('click',function(){
+                    c.src=this.src;
+                }
+                )
+            }
+
+        
+
+        </script>
+    </div>
+</body>
+</html>

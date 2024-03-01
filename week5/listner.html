@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Style>
+    img{
+        width: 500px;
+        height: 500px;
+    }
+</Style>
+<body>
+    <button id="butt">submit</button><br>
+    <img id="image" src="https://qph.cf2.quoracdn.net/main-qimg-cfb24b0140493137742ccb8fa90ae765-lq" alt="">
+    <table id="table">
+    
+         
+    </table>
+    <p id="factorial"></p>
+    <script>
+        var image=document.getElementById("image");
+        var b=document.getElementById("table");
+        var c=document.getElementById("factorial");
+        var d=document.getElementById("butt");
+
+        d.addEventListener("click", function() {
+            if (image.style.display === "none") {
+                image.style.display = "block";
+                b.style.display = "none";
+                c.style.display = "none";
+            }
+            else if(b.style.display === "none"){
+                b.style.display="block"
+                image.style.display="none"
+                c.style.display = "none";
+
+                var table="table of four";
+                for(var i=1;i<=10;i++){
+                    table+=+i+"* 4 ="+(i*4)
+                }
+                    b.innerHTML=table
+                }
+            else{
+                Image.style.display="none"
+                b.style.display="none"
+                c.style.display="block"
+                var fact=1;
+                for(var i=0;i<=5;i++){
+                    fact=fact*i
+                }
+                c.innerHTML="factorial of 5"+fact;
+
+            }
+
+        })
+
+    </script>
+    
+</body>
+</html>

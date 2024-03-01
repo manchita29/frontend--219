@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="jquery-3.7.1.min.js"></script>
+<!-- <style>
+    box{
+        color: rgb(102, 182, 244);
+        width: 0cap;
+        height: ;
+    }
+</style> -->
+<body>
+
+    <div id="box" >
+        <input type="text" id="key">
+     ipsum dolor sit, amet consectetur adipisicing elit. Suscipit beatae atque reiciendis quo, harum dolor laudantium voluptas. Quasi labore fugiat velit eum cum tempore magnam maiores explicabo natus. Recusandae, corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium sit earum iste, repellendus aliquid fugit quos ab et exercitationem assumenda repudiandae possimus, nemo molestias facilis, voluptates recusandae magnam atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat eos aliquid et ipsam laborum assumenda aliquam! Harum eveniet quidem doloribus natus expedita, quibusdam sit ea eos officiis alias porro excepturi animi amet iste delectus! Hic quibusdam eveniet quas expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et ipsa asperiores eum est reiciendis numquam 
+    
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#box").css("overflow","scroll")
+            $("#box").css("hight","50px")
+            $("#box").css("width","500px")
+            $("#box").css("border","solid black")
+            $("#box").keyup(function(){
+                $("#key").css("background","blue")
+
+            })
+            $("#box").keydown(function(){
+                $("#key").css("background","pink")
+
+            })
+            $("#box").keypress(function(){
+                $("#key").css("background","yellow")
+
+            })
+           
+        })
+    </script>
+</body>
+</html>
